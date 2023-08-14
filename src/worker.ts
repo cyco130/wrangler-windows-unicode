@@ -9,6 +9,9 @@ export interface Env {
 
 export default {
 	async fetch(request, env, ctx) {
+		const list = await env.__STATIC_CONTENT.list();
+		console.log(JSON.stringify(list));
+
 		try {
 			return await getAssetFromKV(
 				{
