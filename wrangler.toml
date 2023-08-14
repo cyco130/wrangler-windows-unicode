@@ -1,0 +1,6 @@
+name = "wrangler-windows-unicode"
+main = "src/worker.ts"
+compatibility_date = "2023-08-14"
+
+[site]
+bucket = "./public"
